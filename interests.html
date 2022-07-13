@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favico.png" />
+    <style>
+      nav {
+        border-bottom: dashed 0.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="interests.html">Interests </a>
+      </nav>
+      <canvas id="myCanvas" width="200" height="100"> </canvas>
+      <script>
+        let canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.font = '30px Arial';
+        ctx.fillText('My Interests', 10, 50);
+      </script>
+    </header>
+    <main>
+      <section>
+        <h2>Web3/Cryptocurrency</h2>
+        <p>
+          I am an avid investor and developer in web3. I am currently holding Bitcoin
+          <svg width="22" height="22">
+            <circle cx="11" cy="11" r="10" stroke="black" stroke-width="1" fill="orange" />
+            <text x="6" y="16" class="heavy">B</text></svg
+          >, Ethereum, and <a href="https://www.gfinityesports.com/cryptocurrency/luna-crypto-crash/">Terra Luna</a>.
+        </p>
+        <picture>
+          <source media="(min-width:2000px)" width="300" srcset="images/btc.jpeg" />
+          <source media="(min-width:1050px)" width="300" srcset="images/ethereum.jpg" />
+          <img src="images/luna.png" width="500" alt="my crypto investment" />
+        </picture>
+        <p>Here is an interesting video about Cryptocurrency.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3KZY41SqaTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Here are cryptocurrencies that I am interested in:</p>
+        <table>
+          <colgroup>
+            <col span="2" style="background-color: rgb(110, 110, 110)" />
+            <col style="background-color: rgb(0, 255, 119)" />
+          </colgroup>
+          <caption>
+            My Crypto Interests
+          </caption>
+          <tr>
+            <th>Cryptocurrency Name</th>
+            <th>Ticker Symbol</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Bitcoin</td>
+            <td>BTC</td>
+            <td>$19,922.00</td>
+          </tr>
+          <tr>
+            <td>Ethereum</td>
+            <td>ETH</td>
+            <td>$1,157.00</td>
+          </tr>
+          <tr>
+            <td>Terra Luna</td>
+            <td>LUNA</td>
+            <td>$0.000101</td>
+          </tr>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Poetry</h2>
+        <p>One of my favorite poems is <i>The Road Not Taken</i> by Robert Frost:</p>
+        <template>
+          <pre>
+  Two roads diverged in a yellow wood,
+  And sorry I could not travel both
+  And be one traveler, long I stood
+  And looked down one as far as I could
+  To where it bent in the undergrowth;
+  
+  Then took the other, as just as fair,
+  And having perhaps the better claim,
+  Because it was grassy and wanted wear;
+  Though as for that the passing there
+  Had worn them really about the same,
+  
+  And both that morning equally lay
+  In leaves no step had trodden black.
+  Oh, I kept the first for another day!
+  Yet knowing how way leads on to way,
+  I doubted if I should ever come back.
+  
+  I shall be telling this with a sigh
+  Somewhere ages and ages hence:
+  Two roads diverged in a wood, and I—
+  I took the one less traveled by,
+  And that has made all the difference.
+          </pre>
+        </template>
+        <pre>
+Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+
+Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+
+And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way leads on to way,
+I doubted if I should ever come back.
+
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I—
+I took the one less traveled by,
+And that has made all the difference.
+        </pre>
+      </section>
+      <hr />
+      <section>
+        <h2>Music</h2>
+        <p>I really enjoy listening to music.</p>
+        <p>My top 5 music artists are:</p>
+        <ol>
+          <li>Yeat</li>
+          <li>Lil Baby</li>
+          <li>Drake</li>
+          <li>Playboi Carti</li>
+          <li>Lil Durk</li>
+        </ol>
+        <figure>
+          <img src="images/yeat-what-you-need-to-know.jpg" width="250" alt="yeat" />
+          <figcaption>Fig.1 - Yeat</figcaption>
+        </figure>
+        <p>Listen to my current favorite song (Lui Joseph - Strawberry) below:</p>
+        <audio controls>
+          <source src="images/Strawberry.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+      <hr />
+      <section>
+        <h2>Esports</h2>
+        <p>I enjoy following Esports and playing competitive multiplayer first-person shooter games such as:</p>
+        <ul>
+          <li>Valorant</li>
+          <li>Counter-Strike: Global Offensive</li>
+          <li>Minecraft</li>
+        </ul>
+        <details>
+          <summary>My Valorant Experience</summary>
+          <p>Peaked top 1000 in North America. Peak rating was 450 RR. Main chamber or reyna.</p>
+        </details>
+
+        <p>Here is a video of me playing Valorant:</p>
+        <video width="600" controls>
+          <source src="images/sneaky_1v2.mp4" type="video/mp4" />
+        </video>
+        <p>If you would like to play Valorant with me, please fill out this form:</p>
+        <form id="form">
+          <fieldset>
+            <legend>Valorant Duo Form</legend>
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" value="John" /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" value="Doe" /><br />
+            <label for="agent-select">Select your main agent:</label> <br />
+            <select id="agent-select">
+              <optgroup label="Duelist">
+                <option>Jett</option>
+                <option>Reyna</option>
+                <option>Yoru</option>
+              </optgroup>
+              <optgroup label="Controller">
+                <option>Omen</option>
+                <option>Brimstone</option>
+                <option>Astra</option>
+              </optgroup>
+            </select>
+            <br />
+            <label for="explain">Why do you want to duo with me?</label><br />
+            <textarea name="explain" id="explain" cols="30" rows="10"></textarea>
+            <br />
+            <label for="map">What is your favorite map?</label>
+            <br />
+            <input list="maps" name="map" id="map" />
+            <datalist id="maps">
+              <option value="Split"></option>
+              <option value="Ascent"></option>
+              <option value="Haven"></option>
+              <option value="Bind"></option>
+              <option value="Icebox"></option>
+            </datalist>
+            <br />
+            <button type="submit" form="form" value="Submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Thanks for reading - Yinghui</p>
+    </footer>
+  </body>
+</html>
